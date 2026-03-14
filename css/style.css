@@ -1,4 +1,7 @@
-/* General Styling */
+/* ================================
+   General Layout
+================================ */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +11,11 @@ body {
     color: #333;
 }
 
-/* Dark Header Section */
+
+/* ================================
+   Header Section
+================================ */
+
 header {
     background: #24292f;
     color: #fff;
@@ -18,34 +25,52 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 header p {
-    margin: 10px 0 20px 0;
-    font-size: 1.1rem;
+    margin: 12px 0 22px 0;
+    font-size: 1.2rem;
     opacity: 0.9;
 }
 
-/* Menu styling */
+
+/* ================================
+   Navigation
+================================ */
+
+nav {
+    margin-top: 20px;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 0.9rem;
+    margin: 0 15px;
+    font-size: 1.05rem;
     font-weight: bold;
 }
 
 nav a.active {
     border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
 }
 
-/* Main Content Alignment */
+
+/* ================================
+   Main Content
+================================ */
+
 main {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: 50px auto;
     padding: 0 20px;
 }
+
+
+/* ================================
+   Section Titles
+================================ */
 
 h2 {
     font-size: 1.8rem;
@@ -54,11 +79,28 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* About Me Container: Flexbox for Side-by-Side */
+
+/* ================================
+   Links
+================================ */
+
+main a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   About Section Layout
+================================ */
+
 .about-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     margin-top: 20px;
 }
@@ -69,19 +111,29 @@ h2 {
 
 .about-photo {
     flex: 1;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .about-photo img {
-    width: 250px; /* Match the size in your screenshot */
-    height: 250px;
-    border-radius: 50%; /* Perfect circle */
-    object-fit: cover;
-    border: 1px solid #eee;
+    width: 150px;
+    border-radius: 50%;
 }
 
-/* Education Alignment */
+
+/* ================================
+   Lists
+================================ */
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+/* ================================
+   Education Layout
+================================ */
+
 .edu-item {
     display: flex;
     align-items: flex-start;
@@ -94,37 +146,62 @@ h2 {
     height: auto;
 }
 
-/* Contact List */
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
 
-#contact li {
-    margin-bottom: 10px;
-}
+/* ================================
+   Footer
+================================ */
 
-/* Dark Footer Section */
 footer {
     background: #24292f;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 footer a {
     color: #fff;
 }
 
-/* Mobile Responsiveness */
+
+/* ================================
+   Responsive (Mobile)
+================================ */
+
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .about-photo {
-        order: -1;
-        margin-bottom: 20px;
-    }
+
+main {
+    padding: 0 15px;
+}
+
+header h1 {
+    font-size: 1.9rem;
+}
+
+.about-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-photo img {
+    width: 140px;
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px 12px;
+    font-size: 1rem;
+}
+
+.edu-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.school-logo {
+    margin-bottom: 10px;
+}
+
 }
