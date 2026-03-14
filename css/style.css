@@ -202,6 +202,12 @@ footer a {
     margin: 0 0 6px 0;
 }
 
+.location{
+font-weight: normal;
+color:#777;
+font-size:0.9rem;
+}
+
 .role-title {
     font-weight: 600;
 }
@@ -269,6 +275,10 @@ nav a {
 .school-logo {
     width: 75px;
     height: auto;
+}
+
+.timeline-content h3{
+    line-height:1.4;
 }
 
 }
