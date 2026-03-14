@@ -1,70 +1,51 @@
-/* Basic Styling based on your reference */
-body {
-    font-family: Arial, sans-serif; /* Matching your reference image */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
+/* Update the header section in your style.css */
 header {
-    background: #24292f; /* Dark theme from your reference */
+    background: #24292f;
     color: #fff;
-    padding: 3rem 1rem; /* Generous padding for the "Hero" look */
-    text-align: center;
+    padding: 2rem 5%; /* Side padding to keep content from hitting edges */
+    display: flex;
+    flex-direction: column; /* Stack name/tagline and nav */
+    align-items: center;    /* Center everything by default */
 }
 
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* This pushes the nav to the right */
+    align-items: center;
+}
+
+/* Center the name/tagline block */
+.brand {
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 20%; /* Visual offset to keep it centered despite the nav on the right */
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.brand p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Push the menu to the right */
 nav {
-    margin-top: 1.5rem;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 nav a.active {
     border-bottom: 2px solid #fff;
-}
-
-h1, h2 {
-    margin: 0.5rem 0;
-}
-
-/* Main content area */
-main {
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    background: #fff; /* White card effect on grey background */
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-/* List styling for contact/details */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Footer styling matching your reference */
-footer {
-    background: #24292f;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-}
-
-footer a {
-    color: #fff;
 }
