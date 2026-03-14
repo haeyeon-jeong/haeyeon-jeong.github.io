@@ -167,6 +167,66 @@ footer a {
 
 
 /* ================================
+   EXPERIENCE TIMELINE
+================================ */
+
+.timeline {
+    border-left: 3px solid #e2e2e2;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background: #24292f;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 6px 0;
+}
+
+.role-title {
+    font-weight: 600;
+}
+
+.role-year {
+    display: block;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.role-block {
+    margin-top: 10px;
+}
+
+.timeline ul {
+    padding-left: 18px;
+}
+
+.timeline li {
+    margin-bottom: 6px;
+}
+
+
+/* ================================
    Responsive (Mobile)
 ================================ */
 
