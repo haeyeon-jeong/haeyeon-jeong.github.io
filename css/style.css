@@ -174,7 +174,7 @@ footer a {
 @media (max-width: 768px) {
 
 main {
-    padding: 0 15px;
+    padding: 0 22px;
 }
 
 header h1 {
@@ -208,7 +208,7 @@ nav a {
 }
 
 .school-logo {
-    width: 110px;
+    width: 75px;
     height: auto;
 }
 
