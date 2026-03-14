@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Restored Top Dark Section */
+/* Dark Top Section */
 header {
     background: #24292f;
     color: #fff;
@@ -64,7 +64,7 @@ section p, section ul {
 }
 
 ul {
-    list-style-position: inside; /* Keeps bullets aligned with text/titles */
+    list-style-position: inside; 
     padding-left: 0;
 }
 
@@ -81,7 +81,7 @@ ul {
     height: auto;
 }
 
-/* Bottom Dark Section */
+/* Dark Bottom Section */
 footer {
     background: #24292f;
     color: white;
