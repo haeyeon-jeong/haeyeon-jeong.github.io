@@ -1,42 +1,100 @@
-/* Layout for About Container */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Dark Header Section */
+header {
+    background: #24292f;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 20px 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Menu styling */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Main Content Alignment */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* About Me Container: Flexbox for Side-by-Side */
 .about-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
     margin-top: 20px;
 }
 
 .about-text {
-    flex: 2; /* Gives more room to your bio */
+    flex: 2;
 }
 
 .about-photo {
     flex: 1;
-    text-align: right;
+    display: flex;
+    justify-content: center;
 }
 
 .about-photo img {
-    max-width: 250px; /* Adjust size to fit your preference */
-    height: auto;
-    border-radius: 50%; /* Optional: Makes photo circular */
-    border: 3px solid #eee;
+    width: 300px; /* Match the size in your screenshot */
+    height: 300px;
+    border-radius: 50%; /* Perfect circle */
+    object-fit: cover;
+    border: 1px solid #eee;
 }
 
-/* Ensure school logos are sized correctly */
-.school-logo {
-    width: 60px;
-    height: auto;
-    margin-right: 20px;
-}
-
+/* Education Alignment */
 .edu-item {
     display: flex;
     align-items: flex-start;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
-/* Fix for Bullet points alignment */
+.school-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Contact List */
 #contact ul {
     list-style: none;
     padding: 0;
@@ -44,4 +102,29 @@
 
 #contact li {
     margin-bottom: 10px;
+}
+
+/* Dark Footer Section */
+footer {
+    background: #24292f;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-photo {
+        order: -1;
+        margin-bottom: 20px;
+    }
 }
