@@ -115,7 +115,7 @@ main a:hover {
 }
 
 .about-photo img {
-    width: 140px;
+    width: 200px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
@@ -184,11 +184,15 @@ header h1 {
 .about-container {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .about-photo {
-    order: -1;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.about-photo img {
+    width: 130px;
 }
 
 nav a {
@@ -198,13 +202,14 @@ nav a {
 }
 
 .edu-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
 }
 
 .school-logo {
-    height: 60px;
+    width: 110px;
+    height: auto;
 }
 
 }
