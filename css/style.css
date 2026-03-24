@@ -305,6 +305,62 @@ ul {
     text-decoration: underline;
 }
 
+/* ================================
+   SKILLS SECTION
+================================ */
+
+.skills-section {
+    margin-bottom: 30px;
+}
+
+.skills-section h3 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* GRID */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* SKILL TAG */
+.skill-card {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #f4f6f8;
+    border: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+/* 🔥 subtle hover (matches your project cards) */
+.skill-card:hover {
+    background: #eef4ff;
+    border-color: #c7dbff;
+}
+
+/* CERT */
+.cert-card {
+    border: 1px solid #eee;
+    padding: 14px;
+    border-radius: 10px;
+    background: #fafafa;
+    max-width: 340px;
+}
+
+.cert-card strong {
+    display: block;
+    font-size: 0.95rem;
+}
+
+.cert-card p {
+    margin: 4px 0 0 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+
 
 /* ================================
    FOOTER
@@ -416,4 +472,14 @@ p {
     padding: 6px 12px;
 }
 
+}
+
+
+.skills-section h3 {
+    font-size: 1.05rem;
+}
+
+.skill-card {
+    font-size: 0.85rem;
+    padding: 7px 12px;
 }
