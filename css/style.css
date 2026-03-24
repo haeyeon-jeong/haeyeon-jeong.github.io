@@ -231,6 +231,61 @@ font-size:0.9rem;
     margin-bottom: 6px;
 }
 
+/* ================================
+   PROJECTS
+================================ */
+
+.filter-container{
+margin:20px 0 30px 0;
+}
+
+.filter-btn{
+border:1px solid #ddd;
+background:#fff;
+padding:8px 14px;
+margin:5px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.filter-btn.active{
+background:#24292f;
+color:#fff;
+}
+
+
+.project-grid{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+border:1px solid #eee;
+padding:18px;
+border-radius:10px;
+transition:0.2s;
+}
+
+.project-card:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card h3{
+margin-top:0;
+}
+
+.tags{
+font-size:0.85rem;
+color:#777;
+margin:8px 0;
+}
+
+.project-card a{
+display:inline-block;
+margin-top:10px;
+font-weight:bold;
+}
 
 /* ================================
    Responsive (Mobile)
