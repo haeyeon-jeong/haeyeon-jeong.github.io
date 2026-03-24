@@ -336,8 +336,26 @@ p {
 }
 
 /* ABOUT TEXT */
+.about-container {
+    flex-direction: column;   
+    align-items: center;
+    gap: 15px;
+}
+
+.about-text {
+    width: 100%;
+}
+
 .about-text p {
-    font-size: 0.95rem;
+    text-align: left;         
+}
+
+.about-photo {
+    order: -1;                
+}
+
+.about-photo img {
+    width: 130px;
 }
 
 /* EXPERIENCE TEXT */
