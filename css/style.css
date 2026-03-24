@@ -1,5 +1,5 @@
 /* ================================
-   General Layout
+   GENERAL
 ================================ */
 
 body {
@@ -13,7 +13,7 @@ body {
 
 
 /* ================================
-   Header Section
+   HEADER
 ================================ */
 
 header {
@@ -36,7 +36,7 @@ header p {
 
 
 /* ================================
-   Navigation
+   NAV
 ================================ */
 
 nav {
@@ -58,7 +58,7 @@ nav a.active {
 
 
 /* ================================
-   Main Content
+   MAIN
 ================================ */
 
 main {
@@ -69,7 +69,7 @@ main {
 
 
 /* ================================
-   Section Titles
+   TITLES
 ================================ */
 
 h2 {
@@ -81,7 +81,7 @@ h2 {
 
 
 /* ================================
-   Links
+   LINKS
 ================================ */
 
 main a {
@@ -95,7 +95,7 @@ main a:hover {
 
 
 /* ================================
-   About Section
+   ABOUT
 ================================ */
 
 .about-container {
@@ -121,7 +121,7 @@ main a:hover {
 
 
 /* ================================
-   Lists
+   LISTS
 ================================ */
 
 ul {
@@ -131,56 +131,28 @@ ul {
 
 
 /* ================================
-   Footer
-================================ */
-
-footer {
-    background: #24292f;
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-    margin-top: 50px;
-}
-
-footer a {
-    color: #fff;
-}
-
-
-/* ================================
-   EXPERIENCE TIMELINE 
+   EXPERIENCE (CLEAN TIMELINE)
 ================================ */
 
 .timeline {
-    position: relative;
-    padding-left: 40px;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 20px;
+    margin-left: 10px;
 }
 
-/* vertical line */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 16px;
-    top: 5px;
-    bottom: 0;
-    width: 2px;
-    background: #e0e0e0;
-}
-
-/* item */
 .timeline-item {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
-/* dot */
+/* DOT */
 .timeline-item::before {
     content: "";
     position: absolute;
-    left: 10px;
-    top: 8px;
-    width: 12px;
-    height: 12px;
+    left: -26px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
     background: #24292f;
     border-radius: 50%;
 }
@@ -188,13 +160,8 @@ footer a {
 /* DATE */
 .timeline-date {
     font-size: 0.85rem;
-    color: #777;
+    color: #888;
     margin-bottom: 6px;
-}
-
-/* CONTENT BLOCK */
-.timeline-content {
-    margin-left: 10px;
 }
 
 /* COMPANY */
@@ -213,14 +180,14 @@ footer a {
 
 /* ROLE */
 .role-title {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
 /* ROLE YEAR */
 .role-year {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #999;
     display: block;
     margin-bottom: 6px;
@@ -228,13 +195,31 @@ footer a {
 
 /* BULLETS */
 .timeline-content ul li {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.5;
 }
 
-/* spacing between LG roles */
+/* MULTI ROLE */
 .role-block {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+}
+
+
+/* ================================
+   EDUCATION 
+================================ */
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+/* 🔥 THIS FIXES YOUR HUGE GWU LOGO */
+.school-logo {
+    width: 80px;
+    height: auto;
 }
 
 
@@ -264,16 +249,14 @@ footer a {
     display: none;
 }
 
-
-/* grid */
+/* GRID */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     gap: 20px;
 }
 
-
-/* card */
+/* CARD */
 .project-card {
     display: flex;
     flex-direction: column;
@@ -292,8 +275,7 @@ footer a {
     margin-top: 0;
 }
 
-
-/* tags */
+/* TAGS */
 .tags {
     font-size: 0.9rem;
     color: #666;
@@ -301,8 +283,7 @@ footer a {
     margin-bottom: 6px;
 }
 
-
-/* links */
+/* LINKS */
 .project-links {
     border-top: 1px solid #f0f0f0;
     padding-top: 6px;
@@ -321,12 +302,29 @@ footer a {
 
 
 /* ================================
-   MOBILE RESPONSIVE
+   FOOTER
+================================ */
+
+footer {
+    background: #24292f;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff;
+}
+
+
+/* ================================
+   MOBILE
 ================================ */
 
 @media (max-width: 768px) {
 
-/* header */
+/* HEADER */
 header h1 {
     font-size: 1.8rem;
 }
@@ -335,22 +333,22 @@ header p {
     font-size: 1.05rem;
 }
 
-/* nav */
+/* NAV */
 nav a {
     font-size: 0.95rem;
 }
 
-/* section */
+/* TITLE */
 h2 {
     font-size: 1.6rem;
 }
 
-/* text */
+/* TEXT */
 p {
     font-size: 0.95rem;
 }
 
-/* about */
+/* ABOUT */
 .about-container {
     flex-direction: column;
     align-items: center;
@@ -361,19 +359,16 @@ p {
     width: 130px;
 }
 
-/* timeline */
+/* TIMELINE */
 .timeline {
-    padding-left: 20px;
-}
-
-.timeline::before {
-    left: 6px;
+    padding-left: 16px;
+    margin-left: 6px;
 }
 
 .timeline-item::before {
-    left: -4px;
-    width: 10px;
-    height: 10px;
+    left: -22px;
+    width: 8px;
+    height: 8px;
 }
 
 .timeline-content h3 {
@@ -385,10 +380,19 @@ p {
 }
 
 .timeline-content ul li {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 }
 
-/* projects */
+/* EDUCATION */
+.edu-item {
+    flex-direction: column;
+}
+
+.school-logo {
+    width: 60px;
+}
+
+/* PROJECT */
 .project-card h3 {
     font-size: 1.1rem;
 }
@@ -401,7 +405,7 @@ p {
     font-size: 0.8rem;
 }
 
-/* buttons */
+/* FILTER BUTTON */
 .filter-btn {
     font-size: 0.85rem;
     padding: 6px 12px;
