@@ -319,47 +319,66 @@ text-decoration:underline;
 
 @media (max-width: 768px) {
 
+/* MAIN CONTENT WIDTH */
 main {
-    padding: 0 22px;
+    padding: 0 18px;
 }
 
-header h1 {
-    font-size: 1.9rem;
+/* SECTION TITLE */
+h2 {
+    font-size: 1.6rem;
 }
 
-.about-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+/* BODY TEXT */
+p {
+    font-size: 0.95rem;
+    line-height: 1.55;
 }
 
-.about-photo {
-    margin-bottom: 5px;
+/* ABOUT TEXT */
+.about-text p {
+    font-size: 0.95rem;
 }
 
-.about-photo img {
-    width: 130px;
+/* EXPERIENCE TEXT */
+.experience-item p,
+.experience-item li {
+    font-size: 0.95rem;
 }
 
+/* PROJECT CARD TEXT */
+.project-card p {
+    font-size: 0.92rem;
+}
+
+/* TAG TEXT */
+.tags {
+    font-size: 0.8rem;
+}
+
+/* NAV */
 nav a {
-    display: inline-block;
-    margin: 10px 12px;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
-.edu-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
+/* HEADER TITLE */
+header h1 {
+    font-size: 1.8rem;
 }
 
-.school-logo {
-    width: 75px;
-    height: auto;
+header p {
+    font-size: 1.05rem;
 }
 
-.timeline-content h3{
-    line-height:1.4;
+/* BUTTONS (filters) */
+.filter-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+/* PROJECT TITLE */
+.project-card h3 {
+    font-size: 1.1rem;
 }
 
 }
