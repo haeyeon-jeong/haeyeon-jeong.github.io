@@ -177,7 +177,7 @@ ul {
     font-size: 0.9rem;
     color: #777;
     margin-top: 0px;   
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 /* ROLE */
@@ -193,7 +193,7 @@ ul {
     font-size: 0.8rem;
     color: #999;
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 /* BULLETS */
