@@ -134,20 +134,24 @@ GitHub
 <script>
 function filterProjects(category) {
     const cards = document.querySelectorAll(".project-card");
+    const buttons = document.querySelectorAll(".filter-btn");
 
+    // 🔥 Reset ALL cards first
     cards.forEach(card => {
-        if (category === "all") {
-            card.style.display = "block";
-        } else {
-            if (card.classList.contains(category)) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        }
+        card.classList.remove("hidden");
     });
 
-    document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+    // Apply filter
+    if (category !== "all") {
+        cards.forEach(card => {
+            if (!card.classList.contains(category)) {
+                card.classList.add("hidden");
+            }
+        });
+    }
+
+    // Active button styling
+    buttons.forEach(btn => btn.classList.remove("active"));
     event.target.classList.add("active");
 }
 </script>
