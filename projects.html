@@ -131,27 +131,23 @@ GitHub
   
 </main>
 
-
 <script>
 function filterProjects(category, btn) {
     const cards = document.querySelectorAll(".project-card");
     const buttons = document.querySelectorAll(".filter-btn");
 
-    // reset
     cards.forEach(card => {
-        card.classList.remove("hidden");
+        if (category === "all") {
+            card.style.display = "";
+        } else {
+            if (card.classList.contains(category)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+        }
     });
 
-    // filter
-    if (category !== "all") {
-        cards.forEach(card => {
-            if (!card.classList.contains(category)) {
-                card.classList.add("hidden");
-            }
-        });
-    }
-
-    // active button
     buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 }
