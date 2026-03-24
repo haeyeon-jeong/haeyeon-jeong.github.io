@@ -177,14 +177,14 @@ ul {
     font-size: 0.9rem;
     color: #777;
     margin-top: 0px;   
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 /* ROLE */
 .role-title {
     font-size: 0.95rem;
     font-weight: 600;
-    margin-top: 14px;  
+    margin-top: 16px;  
     margin-bottom: 0px;
 }
 
