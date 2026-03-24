@@ -148,27 +148,26 @@ footer a {
 
 
 /* ================================
-   EXPERIENCE TIMELINE
+   EXPERIENCE TIMELINE 
 ================================ */
 
-/* container */
 .timeline {
     position: relative;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 /* vertical line */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 0;
+    left: 16px;
+    top: 5px;
     bottom: 0;
     width: 2px;
-    background: #ddd;
+    background: #e0e0e0;
 }
 
-/* each item */
+/* item */
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
@@ -178,59 +177,64 @@ footer a {
 .timeline-item::before {
     content: "";
     position: absolute;
-    left: -2px;
-    top: 6px;
+    left: 10px;
+    top: 8px;
     width: 12px;
     height: 12px;
     background: #24292f;
     border-radius: 50%;
 }
 
-/* date */
+/* DATE */
 .timeline-date {
     font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+/* CONTENT BLOCK */
+.timeline-content {
+    margin-left: 10px;
+}
+
+/* COMPANY */
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+/* LOCATION */
+.location {
+    font-size: 0.9rem;
     color: #777;
     margin-bottom: 8px;
 }
 
-/* company */
-.timeline-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-/* location */
-.location {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 2px 0 8px 0;
-}
-
-/* role */
+/* ROLE */
 .role-title {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-/* role year */
+/* ROLE YEAR */
 .role-year {
     font-size: 0.85rem;
-    color: #888;
+    color: #999;
     display: block;
     margin-bottom: 6px;
 }
 
-/* bullets */
+/* BULLETS */
 .timeline-content ul li {
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-/* spacing between roles */
+/* spacing between LG roles */
 .role-block {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 
