@@ -20,3 +20,121 @@
 <a href="skills.html">Skills</a>
 </nav>
 </header>
+
+<main>
+
+<h2>Projects</h2>
+
+<!-- FILTER BUTTONS -->
+<div class="filter-container">
+<button class="filter-btn active" onclick="filterProjects('all')">All</button>
+<button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
+<button class="filter-btn" onclick="filterProjects('nlp')">NLP</button>
+<button class="filter-btn" onclick="filterProjects('viz')">Visualization</button>
+<button class="filter-btn" onclick="filterProjects('cloud')">Cloud</button>
+</div>
+
+
+<!-- PROJECT GRID -->
+<div class="project-grid">
+
+<!-- PROJECT -->
+<div class="project-card ml cloud">
+<h3>AWS Appendicitis Prediction</h3>
+<p>End-to-end ML pipeline using AWS for healthcare prediction modeling.</p>
+<div class="tags">Python • AWS • ML • Cloud</div>
+<a href="https://github.com/haeyeon-jeong/aws-appendicitis-prediction" target="_blank">GitHub</a>
+</div>
+
+<!-- PROJECT -->
+<div class="project-card nlp">
+<h3>NLP Threads vs Twitter Analysis</h3>
+<p>Sentiment analysis using VADER, TF-IDF, and DistilBERT.</p>
+<div class="tags">Python • NLP • BERT</div>
+<a href="https://github.com/your-repo" target="_blank">GitHub</a>
+</div>
+
+<!-- PROJECT -->
+<div class="project-card viz">
+<h3>Loop Clothing Exchange Dashboard</h3>
+<p>Tableau dashboard analyzing sustainability and community behavior.</p>
+<div class="tags">Tableau • Visualization</div>
+<a href="https://public.tableau.com/app/profile/haeyeon.jeong1035/viz/TheLoopClothingExchange/Temporal" target="_blank">View</a>
+</div>
+
+<!-- PROJECT -->
+<div class="project-card viz">
+<h3>Breaking the Shell: Bird Flu & Egg Prices</h3>
+<p>
+Analyzed U.S. egg price volatility (2022–2025) by combining outbreak data and pricing trends to uncover key drivers of market instability.
+</p>
+<div class="tags">Tableau • Data Visualization • Time Series</div>
+<a href="https://public.tableau.com/app/profile/haeyeon.jeong1035/viz/BreakingtheShellVisualizingBirdFluandEggPrices2022-2025/Intro" target="_blank">View Dashboard</a>
+</div>
+  
+<!-- PROJECT -->
+<div class="project-card viz">
+<h3>Halloween Analysis</h3>
+<p>Visualization project exploring time-based trends.</p>
+<div class="tags">Tableau • Viz</div>
+<a href="https://public.tableau.com/app/profile/haeyeon.jeong1035/viz/HalloweenTrick-or-TreatAnalysis_17738656792740/Dash_Yearly" target="_blank">View</a>
+</div>
+
+<!-- PROJECT -->
+<div class="project-card ml">
+<h3>Mental Health Prediction</h3>
+<p>Built classification models on 292K dataset achieving 91% accuracy.</p>
+<div class="tags">Python • ML • Scikit-learn</div>
+<a href="https://github.com/haeyeon-jeong/nlp-threads-twitter-reviews" target="_blank">GitHub</a>
+</div>
+  
+<!-- PROJECT -->
+<div class="project-card ml">
+<h3>Instacart Customer Behavior Analysis</h3>
+<p>
+Analyzed large-scale grocery transaction data to identify customer purchasing patterns and build predictive models for user behavior and product demand.
+</p>
+<div class="tags">Python • ML</div>
+<a href="https://github.com/haeyeon-jeong/instacart_customer_behavior" target="_blank">
+GitHub
+</a>
+</div>
+
+<!-- PROJECT -->
+<div class="project-card ml">
+<h3>Used Car Price Prediction</h3>
+<p>
+Performed exploratory data analysis (EDA) and built machine learning models in <strong>R</strong> to predict used car prices and analyze key factors such as mileage, age, and engine power.
+</p>
+<div class="tags">R • EDA • Machine Learning • Decision Tree</div>
+<a href="https://github.com/haeyeon-jeong/usedcar-price-prediction" target="_blank">
+GitHub
+</a>
+</div>
+
+</main>
+
+
+<script>
+function filterProjects(category) {
+    const cards = document.querySelectorAll(".project-card");
+
+    cards.forEach(card => {
+        if (category === "all") {
+            card.style.display = "block";
+        } else {
+            if (card.classList.contains(category)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        }
+    });
+
+    document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+}
+</script>
+
+</body>
+</html>
