@@ -287,6 +287,42 @@ margin-top:10px;
 font-weight:bold;
 }
 
+/* PROJECT CARD ALIGNMENT FIX */
+
+.project-card{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:230px;
+}
+
+
+/* TAG TEXT */
+.tags{
+font-size:0.9rem;
+color:#666;
+margin:10px 0;
+}
+
+
+/* LINK AREA */
+.project-links{
+margin-top:auto;
+}
+
+
+/* LINK STYLE */
+.project-links a{
+font-weight:600;
+color:#0366d6;
+text-decoration:none;
+margin-right:12px;
+}
+
+.project-links a:hover{
+text-decoration:underline;
+}
+
 /* ================================
    Responsive (Mobile)
 ================================ */
