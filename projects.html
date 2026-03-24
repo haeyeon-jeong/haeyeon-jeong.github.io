@@ -27,11 +27,11 @@
 
 <!-- FILTER BUTTONS -->
 <div class="filter-container">
-<button class="filter-btn active" onclick="filterProjects('all')">All</button>
-<button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
-<button class="filter-btn" onclick="filterProjects('nlp')">NLP</button>
-<button class="filter-btn" onclick="filterProjects('viz')">Visualization</button>
-<button class="filter-btn" onclick="filterProjects('cloud')">Cloud</button>
+<button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+<button class="filter-btn" onclick="filterProjects('ml', this)">Machine Learning</button>
+<button class="filter-btn" onclick="filterProjects('nlp', this)">NLP</button>
+<button class="filter-btn" onclick="filterProjects('viz', this)">Visualization</button>
+<button class="filter-btn" onclick="filterProjects('cloud', this)">Cloud</button>
 </div>
 
 
@@ -132,16 +132,16 @@ GitHub
 
 
 <script>
-function filterProjects(category) {
+function filterProjects(category, btn) {
     const cards = document.querySelectorAll(".project-card");
     const buttons = document.querySelectorAll(".filter-btn");
 
-    // 🔥 Reset ALL cards first
+    // reset
     cards.forEach(card => {
         card.classList.remove("hidden");
     });
 
-    // Apply filter
+    // filter
     if (category !== "all") {
         cards.forEach(card => {
             if (!card.classList.contains(category)) {
@@ -150,9 +150,9 @@ function filterProjects(category) {
         });
     }
 
-    // Active button styling
-    buttons.forEach(btn => btn.classList.remove("active"));
-    event.target.classList.add("active");
+    // active button
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
 }
 </script>
 
