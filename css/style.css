@@ -335,7 +335,7 @@ ul {
     font-size: 0.9rem;
 }
 
-/* 🔥 subtle hover (matches your project cards) */
+/* subtle hover (matches your project cards) */
 .skill-card:hover {
     background: #eef4ff;
     border-color: #c7dbff;
@@ -482,4 +482,5 @@ p {
 .skill-card {
     font-size: 0.85rem;
     padding: 7px 12px;
+}
 }
