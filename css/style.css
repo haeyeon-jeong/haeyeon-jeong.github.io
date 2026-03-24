@@ -131,7 +131,7 @@ ul {
 
 
 /* ================================
-   EXPERIENCE (CLEAN TIMELINE)
+   EXPERIENCE 
 ================================ */
 
 .timeline {
@@ -161,7 +161,7 @@ ul {
 .timeline-date {
     font-size: 0.85rem;
     color: #888;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 /* COMPANY */
@@ -175,13 +175,14 @@ ul {
 .location {
     font-size: 0.9rem;
     color: #777;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 /* ROLE */
 .role-title {
     font-size: 0.95rem;
     font-weight: 600;
+    margin-top: 10px;  
     margin-bottom: 6px;
 }
 
@@ -213,13 +214,13 @@ ul {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
-/* 🔥 THIS FIXES YOUR HUGE GWU LOGO */
 .school-logo {
     width: 80px;
     height: auto;
+    margin-top: 10px;   
 }
 
 
