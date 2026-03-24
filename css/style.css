@@ -313,58 +313,40 @@ ul {
    SKILLS SECTION
 ================================ */
 
-.skills-section {
-    margin-bottom: 24px;
-    max-width: 700px;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
 }
 
-.skills-section h3 {
-    margin-bottom: 6px;
-    margin-top: 18px;
-    font-size: 1.1rem;
+.skills-block {
+    border-left: 2px solid #e5e7eb;
+    padding-left: 14px;
 }
 
-/* GRID */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 6px;
+.skills-block h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
 }
 
-/* SKILL TAG */
-.skill-card {
-    padding: 6px 12px;
-    border-radius: 20px;
-    background: #f6f7f9;
-    border: 1px solid #e5e7eb;
-    font-size: 0.88rem;
+.skills-block p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* subtle hover */
-.skill-card:hover {
-    background: #eef4ff;
-    border-color: #c7dbff;
-}
-
-/* CERT */
-.cert-card {
-    border: 1px solid #eee;
-    padding: 12px;
-    border-radius: 10px;
-    background: #fafafa;
-    max-width: 320px;
-}
-
-.cert-card strong {
+/* Certification subtext */
+.cert-sub {
     display: block;
-    font-size: 0.9rem;
-}
-
-.cert-card p {
-    margin: 3px 0 0 0;
-    font-size: 0.8rem;
-    color: #777;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 4px;
 }
 
 
@@ -479,11 +461,45 @@ p {
 }
 
 
-.skills-section h3 {
-    font-size: 1.05rem;
+/* SKILLS CONTAINER */
+.skills-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 20px;
 }
 
-.skill-card {
+/* EACH BLOCK */
+.skills-block {
+    padding-left: 0;
+    border-left: none; /* remove desktop line */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 14px;
+}
+
+   .skills-block p {
+    letter-spacing: 0.2px;
+}
+   
+/* TITLE */
+.skills-block h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+/* CONTENT */
+.skills-block p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* CERT */
+.cert-sub {
     font-size: 0.85rem;
 }
+
+/* remove border for last item */
+.skills-block:last-child {
+    border-bottom: none;
+}
+
 }
