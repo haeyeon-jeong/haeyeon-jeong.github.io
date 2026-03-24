@@ -253,6 +253,9 @@ background:#24292f;
 color:#fff;
 }
 
+.hidden {
+display: none;
+}
 
 /* GRID */
 .project-grid{
