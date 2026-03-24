@@ -179,7 +179,7 @@ footer a {
 
 /* COMPANY NAME */
 .timeline-content h3 {
-    font-size: 1.05rem;   /* ↓ reduced */
+    font-size: 1.05rem;   
     line-height: 1.4;
     margin-bottom: 4px;
 }
@@ -192,7 +192,7 @@ footer a {
 
 /* ROLE TITLE */
 .role-title {
-    font-size: 0.9rem;    /* ↓ reduced */
+    font-size: 0.9rem;    
     font-weight: 600;
     margin-top: 4px;
     margin-bottom: 6px;
@@ -217,7 +217,7 @@ footer a {
     margin-bottom: 14px;
 }
 
-/* TIMELINE LEFT SPACE (optional clean look) */
+/* TIMELINE LEFT SPACE */
 .timeline {
     padding-left: 16px;
 }
