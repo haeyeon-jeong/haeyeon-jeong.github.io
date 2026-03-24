@@ -170,65 +170,56 @@ footer a {
    EXPERIENCE TIMELINE
 ================================ */
 
-.timeline {
-    border-left: 3px solid #e2e2e2;
-    margin-left: 20px;
-    padding-left: 25px;
-}
-
-.timeline-item {
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -33px;
-    top: 6px;
-    width: 12px;
-    height: 12px;
-    background: #24292f;
-    border-radius: 50%;
-}
-
+/* DATE */
 .timeline-date {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #777;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
+/* COMPANY NAME */
 .timeline-content h3 {
-    margin: 0 0 6px 0;
+    font-size: 1.05rem;   /* ↓ reduced */
+    line-height: 1.4;
+    margin-bottom: 4px;
 }
 
-.location{
-font-weight: normal;
-color:#777;
-font-size:0.9rem;
-}
-
-.role-title {
-    font-weight: 600;
-}
-
-.role-year {
-    display: block;
+/* LOCATION */
+.location {
     font-size: 0.85rem;
     color: #777;
-    margin-bottom: 5px;
 }
 
-.role-block {
-    margin-top: 10px;
-}
-
-.timeline ul {
-    padding-left: 18px;
-}
-
-.timeline li {
+/* ROLE TITLE */
+.role-title {
+    font-size: 0.9rem;    /* ↓ reduced */
+    font-weight: 600;
+    margin-top: 4px;
     margin-bottom: 6px;
+}
+
+/* ROLE YEAR (LG CNS sub roles) */
+.role-year {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* BULLETS */
+.timeline-content ul li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* REDUCE SPACING BETWEEN ROLES */
+.role-block {
+    margin-bottom: 14px;
+}
+
+/* TIMELINE LEFT SPACE (optional clean look) */
+.timeline {
+    padding-left: 16px;
 }
 
 /* ================================
